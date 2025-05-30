@@ -1,0 +1,25 @@
+{
+  "name": "tool-hub",
+  "version": "1.0.0",
+  "description": "A modern, centralized platform for hosting multiple standalone web tools",
+  "main": "index.html",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "python -m http.server 8000",
+    "validate": "node scripts/build.js"
+  },
+  "keywords": [
+    "tools",
+    "web-tools",
+    "utilities",
+    "cloudflare-pages"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/tool-hub.git"
+  },
+  "homepage": "https://your-tool-hub.pages.dev"
+}

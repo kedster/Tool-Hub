@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Injector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Accessibility Injector</h1>
+            <p>Upload your HTML and watch it become accessible instantly</p>
+        </div>
+
+        <div class="main-content">
+            <div class="upload-section">
+                <h2 class="section-title">
+                    📁 Upload Your HTML
+                </h2>
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📤</div>
+                    <div class="upload-text">
+                        Drag & drop your HTML file here or click to browse
+                    </div>
+                    <button class="btn" onclick="document.getElementById('fileInput').click()">
+                        Choose File
+                    </button>
+                    <input type="file" id="fileInput" class="file-input" accept=".html,.htm" />
+                </div>
+                
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Injecting accessibility features...</p>
+                </div>
+
+                <div class="improvements-list" id="improvementsList" style="display: none;">
+                    <h3 style="margin-bottom: 15px; color: #2d3748;">✨ Improvements Applied:</h3>
+                    <div id="improvementsContent"></div>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <h2 class="section-title">
+                    ⚡ Enhanced HTML Output
+                </h2>
+                <div class="output-area" id="outputArea">
+                    <p style="color: #a0aec0; text-align: center; padding: 40px;">
+                        Your accessible HTML will appear here...
+                    </p>
+                </div>
+                <button class="btn" id="downloadBtn" style="margin-top: 15px; display: none;" onclick="downloadHTML()">
+                    💾 Download Enhanced HTML
+                </button>
+            </div>
+        </div>
+
+        <div class="stats" id="stats" style="display: none;">
+            <div class="stat-card">
+                <div class="stat-number" id="elementsProcessed">0</div>
+                <div class="stat-label">Elements Processed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="improvementsCount">0</div>
+                <div class="stat-label">Improvements Applied</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="accessibilityScore">0%</div>
+                <div class="stat-label">Accessibility Score</div>
+            </div>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>
